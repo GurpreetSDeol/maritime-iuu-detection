@@ -238,8 +238,8 @@ if mode == "Fishing Classifier":
     st.markdown('<div class="page-title">Fishing Classifier</div>', unsafe_allow_html=True)
     st.markdown(
         '<div class="page-sub">LightGBM classifier trained on 160k windowed AIS segments '
-        'from 258 vessels. Features are derived from raw ping kinematics — speed variance, '
-        'heading entropy, and displacement ratio — without using any pre-existing fishing '
+        'from 258 vessels. Features are derived from raw ping kinematics: speed variance, '
+        'heading entropy, and displacement ratio without using any pre-existing fishing '
         'labels as inputs.</div>',
         unsafe_allow_html=True
     )
