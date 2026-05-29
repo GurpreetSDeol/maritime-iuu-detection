@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+*.pkl
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model files (large — not needed for the app)
+*.txt
+
+# Environment
+.env
