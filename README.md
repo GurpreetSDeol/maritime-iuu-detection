@@ -10,7 +10,7 @@ A two-component system for detecting and scoring illegal, unreported, and unregu
 
 The project approaches IUU fishing detection from two angles that reflect how the problem is handled in practice: behavioural classification and spatial risk scoring.
 
-**Fishing Classifier** trains a LightGBM model on 160,000 windowed AIS segments from 258 labelled fishing vessels. Rather than relying on pre-existing fishing labels as model inputs, features are engineered from raw ping kinematics — speed variance, trajectory entropy, and net displacement ratio. The model achieves 85% accuracy and an AUC-ROC of 0.927 on held-out vessels it has never seen.
+**Fishing Classifier** trains a LightGBM model on 160,000 windowed AIS segments from 258 labelled fishing vessels. Rather than relying on pre-existing fishing labels as model inputs, features are engineered from raw ping kinematics: speed variance, trajectory entropy, and net displacement ratio. The model achieves 85% accuracy and an AUC-ROC of 0.927 on held-out vessels it has never seen.
 
 **IUU Risk Scoring** applies a composite risk score to confirmed fishing events from the Global Fishing Watch API. Each event is scored based on whether it occurred inside a Marine Protected Area, the vessel's authorisation status against relevant RFMOs, whether it took place on the high seas outside any EEZ, and whether GFW flagged it as a potential risk. The output is a ranked alert feed of the highest-risk fishing activity.
 
