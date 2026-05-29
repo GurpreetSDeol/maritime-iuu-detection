@@ -2,7 +2,7 @@
 
 A two-component system for detecting and scoring illegal, unreported, and unregulated (IUU) fishing activity from AIS vessel tracks. Built as a data science portfolio project targeting the UK geospatial and maritime analytics sector.
 
-**Live app:** [share.streamlit.io](https://maritime-iuu-detection.streamlit.app)
+**Live app:** [share.streamlit.io](https://maritime-iuu-detection-2c8wahpeysoxkb8z9bmgkd.streamlit.app/)
 
 ---
 
