@@ -16,13 +16,6 @@ st.set_page_config(
 # where Streamlit launches the process from
 DATA_DIR = Path(__file__).parent.parent / "Python Files" / "Datasets"
 
-
-# Temporary debug — remove after confirming path
-st.write(f"DATA_DIR: {DATA_DIR}")
-st.write(f"Exists: {DATA_DIR.exists()}")
-st.write(f"Files: {list(DATA_DIR.iterdir()) if DATA_DIR.exists() else 'directory not found'}")
-st.stop()
-
 # ── Styling ───────────────────────────────────────────────────────
 st.markdown("""
 <style>
